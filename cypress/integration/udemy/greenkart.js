@@ -14,8 +14,9 @@ describe('Shopping test', () => {
         // cy.get('.products')
         //     .should('have.length', 1)
 
-        cy.get('.product:visible')
-            .should('have.length', 4)
+        let product = cy.get('.product:visible').then((value)=>{
+            return value.text()
+        });
 
         //Parent child chaining
         cy.get('div.products div.product')
