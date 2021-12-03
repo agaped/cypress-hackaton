@@ -1,1 +1,7 @@
-{}
+
+{
+    "chromeWebSecurity": false,
+    "video": true,
+    "videoCompression": false,
+    "videoUploadOnPasses": true
+}
